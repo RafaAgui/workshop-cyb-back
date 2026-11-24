@@ -1,0 +1,42 @@
+# Entornos virtuales
+venv/
+.venv/
+env/
+
+# Python
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+
+# Herramientas de empaquetado y builds
+build/
+dist/
+*.egg-info/
+.eggs/
+
+# Pruebas y cobertura
+.pytest_cache/
+.coverage
+.coverage.*
+htmlcov/
+
+# Entornos y secretos locales
+.env
+.env.*
+!.env.example
+
+# Logs y archivos temporales
+*.log
+*.tmp
+*.bak
+
+# Editores e IDE
+.vscode/
+.idea/
+.claude/settings.local.json
+
+# Sistema operativo
+.DS_Store
+Thumbs.db
+Desktop.ini
