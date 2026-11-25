@@ -1,5 +1,6 @@
 from fastapi import FastAPI
 from fastapi.middleware.cors import CORSMiddleware
+from core.config import settings
 
 # Se importa
 
@@ -16,7 +17,7 @@ app.include_router(protected_router)  # NUEVO
 
 app.add_middleware(
   CORSMiddleware,
-  allow_origins=["http://localhost:4201"], # solo Angular
+  allow_origins=settings.origins_list,
   allow_credentials=True,
   allow_methods=["*"],
   allow_headers=["*"],
