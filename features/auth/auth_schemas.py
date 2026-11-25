@@ -4,10 +4,6 @@ from pydantic import BaseModel
 class LoginRequest(BaseModel):
     email: str
     password: str
-
-# Lo que le devolvemos a Angular
-class TokenResponse(BaseModel):
-    access_token: str
-    token_type: str
+class UserResponse(BaseModel):
     username: str
     email: str
